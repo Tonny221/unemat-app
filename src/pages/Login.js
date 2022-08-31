@@ -39,6 +39,12 @@ const LogInTextField = styled(TextField)(({ theme }) => ({
   boxShadow: '2px 2px 15px rgba(0,0,0,0.25)'
 }));
 
+const LogInButton = styled(Button)(({theme}) => ({
+  borderRadius: '0.75rem',
+  paddingInline: '1.5rem',
+  backgroundColor: '#038C33'
+}));
+
 const Login = () => {
   return (
     <Box sx={{ backgroundColor: '#251973', minHeight: '100vh' }}>
@@ -50,8 +56,8 @@ const Login = () => {
           <LogInTextField variant='standard' placeholder='institucional@unemat.br' />
           <LogInTextField variant='standard' placeholder='senha (matricula)' />
         </LogInContainer>
-        <Box sx={{ boxShadow: '5px 666px 15px rgba(0,0,0,0.5)' }}>
-          <Button variant='contained'>Enviar</Button>
+        <Box>
+          <LogInButton variant='contained'>Enviar</LogInButton>
         </Box>
       </LogInBox>
     </Box>
