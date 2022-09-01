@@ -3,6 +3,7 @@ import React from 'react'
 import { SectionContainer, UserAvatar } from './FormPage'
 import QRCode from '../images/qr-code.png'
 import Logo from '../images/logo-black.png'
+import profilePic from '../images/profile-pic.png'
 
 const Background = styled(Box)(({ theme }) => ({
   backgroundColor: '#251973',
@@ -26,7 +27,7 @@ const IdPage = () => {
     <Background sx={{ paddingTop: '8rem' }}>
       <SectionContainer>
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-          <UserAvatar />
+          <UserAvatar src={profilePic} sx={{border: '0.5rem solid #D9D9D9'}}/>
         </Box>
         <DataInfo>
           <Typography mt={2} variant='h4' fontWeight={200}>Breno Andrade Jurri</Typography>
@@ -35,11 +36,11 @@ const IdPage = () => {
           <Typography fontWeight={600}>82398478923</Typography>
         </DataInfo>
         <QrCodeBox mt={4}>
-          <img src={QRCode} />
+          <img alt='qrcode' src={QRCode} />
           <Typography>1234567</Typography>
         </QrCodeBox>
         <Box mt={14} sx={{ display: 'flex', justifyContent: 'center' }}>
-          <img src={Logo} />
+          <img alt='logo' src={Logo} />
         </Box>
       </SectionContainer>
     </Background>
