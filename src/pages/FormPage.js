@@ -1,15 +1,14 @@
-import { Avatar, Box, Button, Container, styled, TextField, Typography } from '@mui/material'
+import { Avatar, Box, Container, styled, TextField, Typography } from '@mui/material'
 import React from 'react'
 import { CustomButton } from './Login'
 
-const SectionContainer = styled(Container)(({ theme }) => ({
-  position: 'relative',
+export const SectionContainer = styled(Container)(({ theme }) => ({
   backgroundColor: '#D9D9D9',
   height: '90vh',
   borderRadius: '4rem 4rem 0 0',
 }));
 
-const UserAvatar = styled(Avatar)(({ theme }) => ({
+export const UserAvatar = styled(Avatar)(({ theme }) => ({
   width: '8rem',
   height: '8rem',
   boxShadow: '0px 2px 5px rgba(0,0,0,0.25)',
