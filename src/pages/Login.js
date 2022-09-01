@@ -39,7 +39,7 @@ const LogInTextField = styled(TextField)(({ theme }) => ({
   boxShadow: '2px 2px 15px rgba(0,0,0,0.25)'
 }));
 
-const LogInButton = styled(Button)(({theme}) => ({
+export const CustomButton = styled(Button)(({theme}) => ({
   borderRadius: '0.75rem',
   paddingInline: '1.5rem',
   backgroundColor: '#038C33'
@@ -57,7 +57,7 @@ const Login = () => {
           <LogInTextField variant='standard' placeholder='senha (matricula)' />
         </LogInContainer>
         <Box>
-          <LogInButton variant='contained'>Enviar</LogInButton>
+          <CustomButton variant='contained'>Enviar</CustomButton>
         </Box>
       </LogInBox>
     </Box>
